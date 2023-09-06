@@ -1,7 +1,6 @@
 import re
 from os import environ
-from Script import script 
-
+from Script import 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "y"]:
@@ -15,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '20421609'))
 API_HASH = environ.get('API_HASH', '17187c5466fb7044793bfa8bcaa9ec68')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6206751545:AAGS0597YgX92-gHrSZvUWUtbh40Uh5NASU")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
